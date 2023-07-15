@@ -949,7 +949,7 @@ section {
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-.menu .menu-content a {
+.menu .menu-content .menu-dish {
   padding-right: 10px;
   background: #1a1814;
   position: relative;
@@ -959,11 +959,11 @@ section {
   transition: 0.3s;
 }
 
-.menu .menu-content a:hover {
+/* .menu .menu-content a:hover {
   color: #cda45e;
-}
+} */
 
-.menu .menu-content span {
+.menu .menu-content .menu-price {
   background: #1a1814;
   position: relative;
   z-index: 3;
