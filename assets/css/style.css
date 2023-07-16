@@ -1242,12 +1242,31 @@ section {
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 15px 0 15px;
-  padding: 20px 20px 60px 20px;
+  padding: 20px 20px 20px 20px;
   background: #26231d;
   position: relative;
-  border-radius: 6px;
-  position: relative;
   z-index: 1;
+}
+.testimonials .testimonial-item ul {
+  background: #26231d;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px 0;
+  margin: 0 15px 0 15px;
+}
+
+.testimonials .testimonial-item ul li {
+  background: #26231d;
+  color: #d3af71;
+  border: 1px solid #d3af71;
+  border-radius: 9999px;
+  padding: 4px 12px;
+  white-space: nowrap;
+  margin: 5px;
+  font-size: 12px;
+  transition: 0.3s;
 }
 
 .testimonials .swiper-pagination {
