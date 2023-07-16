@@ -1242,7 +1242,7 @@ section {
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 15px 0 15px;
-  padding: 20px 20px 20px 20px;
+  padding: 20px 20px 0 20px;
   background: #26231d;
   position: relative;
   z-index: 1;
@@ -1253,7 +1253,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 15px 0;
+  padding: 25px 20px 50px;
   margin: 0 15px 0 15px;
 }
 
