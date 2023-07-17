@@ -816,7 +816,7 @@ section {
   color: #cda45e;
 }
 
-.why-us .box h4 {
+.why-us .box h3 {
   font-size: 24px;
   font-weight: 600;
   padding: 0;
@@ -838,7 +838,7 @@ section {
 }
 
 .why-us .box:hover span,
-.why-us .box:hover h4,
+.why-us .box:hover h3,
 .why-us .box:hover p {
   color: #fff;
 }
@@ -1177,7 +1177,7 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.contact .info h4 {
+.contact .info h3 {
   padding: 0 0 0 60px;
   font-size: 18px;
   font-weight: 500;
