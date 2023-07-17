@@ -150,7 +150,7 @@ h6 {
 
 @media (max-width: 500px) {
   #topbar .contact-info i span {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 
@@ -554,7 +554,7 @@ h6 {
 @media (max-width: 500px) {
   #hero .btn-menu,
   #hero .btn-chat {
-    padding: 12px 20px;
+    padding: 12px 15px;
   }
 }
 
