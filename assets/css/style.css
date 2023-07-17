@@ -1,8 +1,64 @@
 /*--------------------------------------------------------------
+# FontFace
+--------------------------------------------------------------*/
+
+/* playfair-display-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/playfair-display-v30-latin-regular.woff2')
+    format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/playfair-display-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* source-sans-3-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/source-sans-3-v9-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* source-sans-3-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Source Sans 3';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/assets/fonts/source-sans-3-v9-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* source-sans-3-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/source-sans-3-v9-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/*--------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+
+:root {
+  --ff-title: 'Playfair Display', serif;
+  --ff-body: 'Source Sans 3', sans-serif;
+}
+
+/*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--ff-body);
   background: #0c0b09;
   color: #fff;
 }
@@ -23,7 +79,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--ff-title);
 }
 
 /*--------------------------------------------------------------
@@ -150,7 +206,7 @@ h6 {
 
 @media (max-width: 500px) {
   #topbar .contact-info i span {
-    font-size: 11px;
+    font-size: 13px;
   }
 }
 
@@ -197,14 +253,14 @@ h6 {
 }
 
 #header .logo {
-  font-size: 28px;
+  font-size: 26px;
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-weight: 300;
-  letter-spacing: 1px;
+  font-weight: 400;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--ff-body);
 }
 
 #header .logo a {
@@ -226,7 +282,7 @@ h6 {
   padding: 8px 25px;
   text-transform: uppercase;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 1px;
   transition: 0.3s;
   display: flex;
@@ -280,7 +336,7 @@ h6 {
   color: #fff;
   white-space: nowrap;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .navbar a i,
@@ -295,70 +351,6 @@ h6 {
 .navbar .active:focus,
 .navbar li:hover > a {
   color: #d9ba85;
-}
-
-.navbar .dropdown ul {
-  display: block;
-  position: absolute;
-  left: 14px;
-  top: calc(100% + 30px);
-  margin: 0;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.3s;
-  border-radius: 4px;
-}
-
-.navbar .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar .dropdown ul a {
-  padding: 10px 20px;
-  color: #444444;
-}
-
-.navbar .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover > a {
-  color: #cda45e;
-}
-
-.navbar .dropdown:hover > ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
-}
-
-.navbar .dropdown .dropdown ul {
-  top: 0;
-  left: calc(100% - 30px);
-  visibility: hidden;
-}
-
-.navbar .dropdown .dropdown:hover > ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-  visibility: visible;
-}
-
-@media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
-
-  .navbar .dropdown .dropdown:hover > ul {
-    left: -100%;
-  }
 }
 
 /**
@@ -418,7 +410,7 @@ h6 {
 .navbar-mobile a,
 .navbar-mobile a:focus {
   padding: 10px 20px;
-  font-size: 15px;
+  font-size: 16px;
   color: #1a1814;
 }
 
@@ -505,7 +497,7 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--ff-body);
 }
 
 #hero h1 span {
@@ -524,7 +516,7 @@ h6 {
 
 #hero .btn-menu,
 #hero .btn-chat {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 13px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -554,7 +546,7 @@ h6 {
 @media (max-width: 500px) {
   #hero .btn-menu,
   #hero .btn-chat {
-    padding: 12px 15px;
+    padding: 12px 20px;
   }
 }
 
@@ -611,14 +603,14 @@ section {
 
 .section-title h2 {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   padding: 0;
   line-height: 1px;
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--ff-body);
 }
 
 .section-title h2::after {
@@ -635,62 +627,8 @@ section {
   margin: 0;
   font-size: 36px;
   font-weight: 700;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--ff-title);
   color: #cda45e;
-}
-
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 15px 0;
-  background: #1d1b16;
-  margin-top: 110px;
-}
-
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 98px;
-  }
-}
-
-.breadcrumbs h2 {
-  font-size: 26px;
-  font-weight: 300;
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #37332a;
-  content: '/';
-}
-
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-
-  .breadcrumbs ol {
-    display: block;
-  }
-
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -769,8 +707,8 @@ section {
 }
 
 .about .content h3 {
-  font-weight: 600;
-  font-size: 26px;
+  font-weight: 700;
+  font-size: 32px;
 }
 
 .about .content ul {
@@ -818,7 +756,7 @@ section {
 
 .why-us .box h3 {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   padding: 0;
   margin: 20px 0;
   color: rgba(255, 255, 255, 0.8);
@@ -859,13 +797,13 @@ section {
   display: inline-block;
   padding: 8px 12px 10px 12px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1;
   color: #fff;
   margin-bottom: 10px;
   transition: all ease-in-out 0.3s;
   border-radius: 50px;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--ff-title);
 }
 
 .menu #menu-flters li:hover,
@@ -928,7 +866,7 @@ section {
   position: relative;
   z-index: 3;
   padding: 0 10px;
-  font-weight: 600;
+  font-weight: 700;
   color: #cda45e;
 }
 
@@ -936,7 +874,7 @@ section {
   margin-left: 85px;
   font-style: italic;
   font-size: 14px;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--ff-body);
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -983,14 +921,14 @@ section {
 }
 
 .events .event-item h3 {
-  font-weight: 600;
-  font-size: 26px;
+  font-weight: 700;
+  font-size: 32px;
   color: #cda45e;
 }
 
 .events .event-item .price {
   font-size: 26px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--ff-body);
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -1180,15 +1118,15 @@ section {
 .contact .info h3 {
   padding: 0 0 0 60px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 5px;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--ff-body);
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 16px;
   color: #bab3a6;
 }
 
@@ -1229,16 +1167,16 @@ section {
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--ff-body);
 }
 
 #footer .footer-top .footer-info p {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--ff-title);
   color: #fff;
 }
 
@@ -1265,7 +1203,7 @@ section {
 
 #footer .footer-top h4 {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   color: #fff;
   position: relative;
   padding-bottom: 12px;
@@ -1321,7 +1259,7 @@ section {
   padding: 8px 25px;
   text-transform: uppercase;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 1px;
   transition: 0.3s;
   display: flex;
