@@ -152,7 +152,7 @@ h6 {
 }
 
 .back-to-top i {
-  font-size: 28px;
+  font-size: 24px;
   color: #cda45e;
   line-height: 0;
 }
@@ -200,6 +200,8 @@ h6 {
 }
 
 #topbar .contact-info i span {
+  font-family: var(--ff-body);
+  font-weight: 400;
   padding-left: 5px;
   color: #fff;
 }
@@ -295,7 +297,7 @@ h6 {
   color: #fff;
 }
 .messenger-btn i {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 @media (max-width: 992px) {
@@ -358,7 +360,7 @@ h6 {
 */
 .mobile-nav-toggle {
   color: #fff;
-  font-size: 28px;
+  font-size: 24px;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -389,7 +391,7 @@ h6 {
 
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
-  top: 15px;
+  top: 30px;
   right: 15px;
 }
 
@@ -1222,7 +1224,7 @@ section {
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
   color: #cda45e;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1;
 }
 
@@ -1241,6 +1243,7 @@ section {
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
+  margin-left: 4px;
 }
 
 #footer .footer-top .footer-links ul a:hover {
@@ -1273,7 +1276,7 @@ section {
 }
 
 #footer .footer-top .footer-chat a i {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 #footer .copyright {
