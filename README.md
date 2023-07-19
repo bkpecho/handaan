@@ -4,7 +4,7 @@
 
 ## Description
 
-Welcome to the GitHub repository for Handaan! Handaan is a delightful restaurant that proudly serves authentic Filipino dishes prepared with a local twist. This repository contains the source code and assets for Handaan's website.
+This GitHub repository houses the source code and assets for the [Handaan website](https://handaan.netlify.app/), a delightful restaurant offering authentic Filipino dishes with a local twist. Built with HTML5, CSS3, Bootstrap, JavaScript, and other popular technologies, it boasts a responsive and mobile-friendly interface, adorned with a beautiful and elegant design.
 
 ## Table of Contents
 
@@ -19,26 +19,25 @@ Welcome to the GitHub repository for Handaan! Handaan is a delightful restaurant
 
 ## Features
 
-- Experience the true essence of Caviteño cuisine.
-- Immerse yourself in the rich culinary heritage of Cavite.
-- Warm and welcoming atmosphere with genuine Caviteño hospitality.
-- Memorable events celebrating the vibrant culture of Cavite.
-- Gallery showcasing delicious food, menu, and restaurant promos.
+- Elegant and visually captivating design.
+- Fully responsive and mobile-friendly interface.
+- Smooth animations for enhanced user experience.
+- Dynamic and stylish grid layout for content presentation.
+- Touch-friendly sliders for intuitive navigation.
+- Utilizes modern technologies like Bootstrap, JavaScript, and CSS3.
 
 ## Technologies Used
 
 1. HTML5 and CSS3 for website structure and styling.
 2. Bootstrap framework for responsive design and layout.
 3. JavaScript for interactive elements and behavior.
-4. Google Maps API for displaying restaurant location.
-5. reCAPTCHA to protect against spam and improve security.
-6. AOS (Animate On Scroll) for smooth and elegant animations.
-7. GLightbox for a beautiful lightbox effect on images.
-8. Isotope layout for a dynamic and stylish grid layout.
-9. Swiper JS for creating responsive and touch-friendly sliders.
-10. Font Awesome for a wide range of icons.
-11. Google Web Fonts Helper for efficient web font usage.
-12. Hosted on Netlify for deployment and hosting.
+4. AOS (Animate On Scroll) for smooth and elegant animations.
+5. GLightbox for a beautiful lightbox effect on images.
+6. Isotope layout for a dynamic and stylish grid layout.
+7. Swiper JS for creating responsive and touch-friendly sliders.
+8. Font Awesome for a wide range of icons.
+9. Google Web Fonts Helper for efficient web font usage.
+10. Hosted on Netlify for deployment and hosting.
 
 ## How to Use
 
@@ -58,11 +57,11 @@ cd handaan
 
 3. Open the `index.html` file in your web browser to view the website.
 
-That's it! You can now explore Handaan Restaurant's website locally on your machine. If you want to make any changes or contribute to the project, feel free to create a pull request on the GitHub repository. We appreciate your contributions!
+That's it! You can now explore Handaan Restaurant's website locally on your machine.
 
 ## Contributing
 
-We welcome contributions to improve the Handaan Restaurant website. If you find any bugs, have suggestions for new features, or want to enhance the design, feel free to create a pull request. We appreciate your feedback!
+We appreciate your interest in improving the Handaan Restaurant website. While we are not actively accepting external contributions at the moment, your feedback is valuable to us. If you discover any issues, have ideas for new features, or want to suggest design enhancements, please feel free to open an issue on the GitHub repository. Thank you for your understanding and support!
 
 ## License
 
@@ -70,7 +69,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-If you have any questions or inquiries, please contact us at handaanrestaurant@example.com.
+For any business inquiries or questions related to Handaan Restaurant, you can reach us via email at handaanmarketing@gmail.com.
 
 ## Links
 
